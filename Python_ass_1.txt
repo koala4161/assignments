@@ -1,0 +1,10 @@
+name = input('Please enter your name :')
+
+if name == "joseph":
+    print(f"Hello, {name}! The password is : @12")
+
+elif name == "Joseph":
+    print(f"Hello, {name}! The password is : @12")
+
+else:
+    print(f"Hello, {name}!  See you later.")
