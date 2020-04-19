@@ -1,1 +1,18 @@
-buraya bilgiler eklenecektir
+age = int(input('what is your age?'))
+addict = input('Are you a cigarette addict?(yes or no)')
+disease = input('Do you have a severe chronic disease?(yes or no)')
+immune = input('Is your immune system too weak?(yes or no)')
+
+age_c = age >= 75
+addict_c = addict == "yes"
+addictage = addict_c and age_c
+
+disease_c = disease == "yes"
+immune_c = immune == "yes"
+
+risk = addictage or disease_c or immune_c
+
+if risk:
+    print('You are in risky group')
+else:
+    print('You are not in risky group')
