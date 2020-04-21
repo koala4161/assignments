@@ -1,0 +1,23 @@
+num = input("Enter the number for Armstrong test : ")
+
+user_input = num.replace(",", ".")
+
+try:
+    val = int(user_input)
+    total=0
+    for i in range(len(num)):
+        total += int(num[i])**len(num)
+    result = True if total == int(num) else False 
+    if result:
+        print(f"{val}  is an Armstrong number")
+    else:
+        print(f"{val}  is not an Armstrong number")
+except:
+    try:
+        val = float(user_input)
+        if val >0:
+            print("Please enter an integer number")
+        else:
+            print("Please enter a positive number")
+    except:
+        print("Do not use any entries other than numeric values")
