@@ -1,0 +1,19 @@
+num = input("Enter the number for Armstrong test : ")
+try:
+    val = int(num)
+    if val <= 1:
+        print(f"{val} is not a prime number")
+    else:
+        for i in range(2, val//2):
+            prime = False if val%i == 0 else True
+            if prime == False:
+                break
+        if prime:
+            print(f"{val}  is a Prime number")
+        else:
+            print(f"{val}  is not a Prime number")
+    if val == 73939133:
+        print("This number is a magical number. All parts of this number are also prime numbers.")
+
+except:
+    print("Do not use any entries other than integer values")
