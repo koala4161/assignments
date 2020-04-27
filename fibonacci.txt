@@ -1,0 +1,6 @@
+fibolist = [1,1]
+
+for i in range(8):
+    fibolist.append(fibolist[i] + fibolist[i+1])
+
+print(fibolist)   
